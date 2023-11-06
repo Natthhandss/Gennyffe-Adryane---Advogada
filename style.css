@@ -1,0 +1,265 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+header {
+  width: 100%;
+  background-color: #753c33;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+i {
+  color: #febd59;
+}
+
+.header-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.header-sections {
+  display: flex;
+  gap: 14px;
+  font-size: 20px;
+}
+
+.header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #fff;
+}
+
+.header-sections a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #fff;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo img {
+  width: 320px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  i {
+    margin-top: 16px;
+    font-size: 34px;
+  }
+  .header-sections i {
+    font-size: 20px;
+  }
+  .header-sections {
+    margin-top: 16px;
+  }
+  .header-logo img {
+    width: 260px;
+    margin-top: 46px;
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.about {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-content img {
+  max-width: 370px;
+  margin-top: 15px;
+}
+
+.about-content div {
+  flex: 1;
+  text-align: center;
+}
+
+.about-description h2 {
+  font-size: 25px;
+  margin-bottom: 24px;
+  text-align: justify;
+}
+.about-description h3 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.about-description p {
+  margin-bottom: 14px;
+  line-height: 150%;
+  font-size: 20px;
+  gap: 14px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+.contatos div {
+  flex: 1;
+}
+
+.contatos {
+  width: 100%;
+  overflow: hidden;
+  background-color: #753c33;
+}
+.contatos h2 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.3em;
+  color: #febd59;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.contatos p {
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 600;
+  color: #febd59;
+  max-width: 620px;
+}
+.contatos i {
+  font-size: 35px;
+  gap: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.contatos a {
+  font-size: 25px;
+  color: #febd59;
+  cursor: default;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contatos {
+    flex-direction: column;
+  }
+  a {
+    display: block;
+    font-size: 28px;
+  }
+}
+.serviços div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.serviços {
+  background-color: #fff;
+}
+.serviços h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  font-size: 35px;
+}
+.serviços h3 {
+  max-width: 950px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.especialidades div {
+  flex-direction: column;
+  height: 220px;
+  width: 220px;
+  padding: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #febd59;
+  background-color: #753c33;
+  border-radius: 10px;
+}
+
+.especialidades div:hover {
+  animation: translateY 0.8s infinite alternate;
+  color: #fff;
+}
+
+@media screen and (max-width: 1347px) {
+  .especialidades {
+    flex-direction: column;
+  }
+  h3 {
+    text-align: justify;
+  }
+}
+.footer {
+  background-color: #753c33;
+}
+.footer p {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 15px;
+  color: #febd59;
+  font-size: 20px;
+}
+
+body {
+  font-family: "quicksand", sans-serif;
+  width: 100%;
+  height: 100% vh;
+  position: relative;
+  background-color: #fff;
+}
+
+button {
+  font-family: "quicksand", sans-serif;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
